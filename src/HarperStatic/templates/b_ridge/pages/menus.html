@@ -1,0 +1,33 @@
+{% extends '../base.html' %}
+{% block title %}Menus{% endblock %}
+{% load staticfiles %} 
+{% block header %}
+
+<div id="image-header" class="bar dark parallax-background menu-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="sub-menu-title">Menus</h1>
+    
+            </div><!-- header-content -->
+        </div><!-- / container -->
+    </div>
+{% endblock %}
+
+{% block frontend_content %}
+
+<section id="about">
+        <div class="container">
+            {% for menu in menus %}
+            <div class="row space-top-30">
+                <div class="col-md-6 col-md-offset-3 about-text-2  fadeInLeft second">
+                    <a href="{{ menu.menu_pdf.url }}" target="_blank">
+                    <div class="alert alert-warning  " role="alert">
+                        <strong>{{menu.menu_name}} -</strong> {{menu.description}}
+                    </div></a>
+                </div><!-- / about-text-2 -->
+            </div><!-- / row -->
+            {% endfor %}
+        </div><!-- / container -->
+    </section>
+    <!-- / about -->
+{% endblock %}

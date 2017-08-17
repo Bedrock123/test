@@ -1,0 +1,122 @@
+{% extends '../base.html' %}
+
+{% load staticfiles %} 
+
+{% block title %}Contact{% endblock %}
+
+{% block header %}
+
+<div id="image-header" class="bar dark parallax-background menu-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="sub-menu-title">Contact</h1>
+    
+            </div><!-- header-content -->
+        </div><!-- / container -->
+    </div>
+{% endblock %}
+
+{% block frontend_content %}
+
+<!-- content -->
+<section id="contact">
+        
+        <!-- google-maps -->
+        <div id="map">
+        </div><!-- / google-maps -->
+        <div class="container">
+            <div class="page-header dark text-center">
+
+                <h4 class="sub-title">185 Madisonville Road
+                    Basking Ridge, NJ 07920<a href="tel:0123456789"><i class="fa fa-phone"></i><span>908-953-8092</span></a></h4>
+                <div class="space-50">&nbsp;</div>
+            </div>
+            <div id="contact-form" class=" fadeIn first">
+                <form id="contactForm" data-toggle="validator">
+                    <div class="row">
+                        <div class="col-sm-6 contact-left-area">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="FULL NAME" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="msg_subject" placeholder="SUBJECT">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 contact-right-area">
+                            <div class="form-group">
+                            <textarea id="message" class="form-control" rows="5" placeholder="MESSAGE" required=""></textarea>
+                            <div class="help-block with-errors"></div>
+                            </div>
+                            <button type="submit" id="form-submit" class="btn btn-md btn-primary-filled btn-form-submit">SEND MESSAGE</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div><!-- / row -->
+                </form>
+            </div><!-- contact-form -->
+        </div><!-- / container -->
+        </section>
+        
+        
+        
+{% endblock %}
+
+{% block js %}
+<script>
+    $(function () {
+        
+            function initMap() {
+        
+                var location = new google.maps.LatLng(40.7185012,  -74.5385065);
+        
+                var mapCanvas = document.getElementById('map');
+                var mapOptions = {
+                    center: location,
+                    zoom: 16,
+                    panControl: false,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+        
+                var markerImage = "{% static './b_ridge/images/marker.png' %}";
+        
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    icon: markerImage
+                });
+{% comment %}         
+                var contentString = '<div class="info-window">' +
+                        '<h3>Info Window Content</h3>' +
+                        '<div class="info-content">' +
+                        '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                        '</div>' +
+                        '</div>'; {% endcomment %}
+                        var contentString =''
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 400
+                });
+        
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+        
+                var styles = [{"featureType": "landscape", "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]}, {"featureType": "poi", "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]}, {"featureType": "road.highway", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "road.arterial", "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]}, {"featureType": "road.local", "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]}, {"featureType": "transit", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]}];
+        
+                map.set('styles', styles);
+        
+        
+            }
+        
+            google.maps.event.addDomListener(window, 'load', initMap);
+        });
+</script>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "short_name": "Basking Ridge Country Club Catering",
+  "name": "Basking Ridge Country Club Catering",
+  "icons": [{
+    "src": "https://www.watchungvalleygc.com/static/img/apple-touch/apple-touch-icon-180x180.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }],
+  "start_url": "/tee-times/",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

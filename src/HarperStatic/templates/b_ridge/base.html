@@ -1,0 +1,150 @@
+{% load staticfiles %}
+{% load activeurl %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Minimal Restaurant Template">
+<meta name="keywords" content="responsive, retina ready, html5, css3, restaurant, food, bar, events" />
+<meta name="author" content="KingStudio.ro">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="{% static './img/logo.png' %}" rel="shortcut icon" type="image/x-icon">f
+<!-- page title -->
+<title>{% block title %}{% endblock %} | Basking Ridge Country Club Catering</title>
+
+<!-- bootstrap css -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- css -->
+<link href="{%  static  './b_ridge/css/style.css' %}" rel="stylesheet">
+<link href="{% static './b_ridge/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{%  static  './b_ridge/css/bootstrap-datetimepicker.css' %}" rel="stylesheet">
+<link href="{%  static  './b_ridge/css/custom.css' %}" rel="stylesheet">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+<link href="{%  static  './b_ridge/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{%  static  './b_ridge/fonts/FontAwesome.otf' %}" rel='stylesheet' type='text/css'>
+</head>
+<style>
+    #sudo-body {
+        min-height: 92vh;
+    }
+    .navbar-default .navbar-nav > .active > a{
+        color: #bc9d4b !important;
+    }
+
+</style>
+<body>
+        <div id="sudo-body">
+<!-- header -->
+<header>
+        <nav class="navbar navbar-default dark-bg navbar-fixed-top">
+               
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="{% static './b_ridge/images/logo-inline.png' %}" alt="logo" class="inline-logo"> <img src="{% static './b_ridge/images/logo-collapsed.png' %}" alt="logo" class="collapsed-logo"></a>
+                    </div><!-- / navbar-header -->
+                  
+                    <div class="navbar-collapse collapse">
+                          {% activeurl menu="yes" %}
+                        <ul class="nav navbar-nav">
+                            <li><a href="{% url 'home_static' %}" class="page-scroll">HOME</a></li>
+                            <li><a href="{% url 'menus_static' %}" >MENUS</a></li>
+                            <li><a href="{% url 'gallery_static' %}" >GALLERY</a></li>
+                            <li><a href="{% url 'vendors_static' %}" >VENDORS</a></li>
+                            <li><a href="{% url 'wedding_promo_static' %}">2018 WEDDING PROMO</a></li>
+                            <li><a href="{% url 'contact_static' %}">CONTACT</a></li>
+                        </ul>
+                        {% endactiveurl %}
+                    </div><!--/.nav-collapse -->
+     
+                </div><!-- / container -->
+                
+            </nav>
+    {% block header %}
+
+    {% endblock %}
+</header>
+<!-- / header -->
+
+{% block frontend_content %}
+{% endblock %}
+</div>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© 2017 - Basking Ridge Country Club Catering
+            <span class="social pull-right">
+                <a href="https://www.facebook.com/pages/Basking-Ridge-Country-Club-Catering/648505181850760"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/baskingridgecatering/"><i class="fa fa-instagram"></i></a>
+            </span>
+        </p>
+    </div><!-- / container -->
+</footer>
+<!-- / footer -->
+
+<!-- javascript -->
+<script src="{% static './b_ridge/js/jquery.min.js' %}"></script>
+<script src="{% static './b_ridge/js/bootstrap.min.js' %}"></script>
+
+<!-- sticky nav -->
+<script src="{% static './b_ridge/js/jquery.easing.min.js' %}"></script>
+<script src="{% static './b_ridge/js/scrolling-nav-sticky.js' %}"></script>
+<!-- / sticky nav -->
+
+
+<!-- wow -->
+<script src="{% static './b_ridge/js/wow.min.js' %}"></script>
+<script>
+new WOW().init();
+</script>
+<!-- / wow -->
+
+<!-- date-time picker -->
+<script src="{% static './b_ridge/js/moment.min.js' %}"></script>
+<script src="{% static './b_ridge/js/bootstrap-datetimepicker.js' %}"></script>
+<script>
+    $(function () {
+        $('#datetimepicker1').datetimepicker();s
+    });
+</script>
+<!-- / date-time picker -->
+<script src="{% static './b_ridge/js/jquery.magnific-popup.min.js' %}"></script>
+<!-- contact-form -->
+<script src="{% static './b_ridge/js/validator.min.js' %}" type="text/javascript"></script>
+<script src="{% static './b_ridge/js/form-scripts.js' %}" type="text/javascript"></script>
+<!-- / contact-form -->
+
+<!-- google-maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA40uewXP25u1A4o9u8ueBimZZwIdNLkY"></script>
+
+<!-- / google-maps -->
+
+<!-- hide nav -->
+<script src="{% static './b_ridge/js/hide-nav.js' %}"></script>
+<!-- / hide nav -->
+<script type="text/javascript">
+    // This will create a single gallery from all elements that have class "lightbox"
+    $('.lightbox').each(function() {
+        $(this).magnificPopup({
+            delegate: 'a.open-gallery', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+        });
+    });
+    </script>
+<!-- / javascript -->
+{% block js %}{% endblock %}
+</body>
+
+</html>

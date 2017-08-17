@@ -1,0 +1,92 @@
+{% extends '../base.html' %}
+{% block title %}Home{% endblock %}
+{% load staticfiles %} 
+{% block header %}
+<!-- image-header -->
+<div id="image-header" class="bar dark parallax-background index-header">
+    <div class="container">
+        <div class="header-content">
+            <img src="{% static './b_ridge/images/custom/logo.png' %}" alt="" class="animated fadeInDown first logo">
+     
+        </div><!-- header-content -->
+    </div><!-- / container -->
+</div>
+<!-- / image-header -->
+{% endblock %}
+
+{% block frontend_content %}
+
+<section id="first-block">
+        <div class="container">
+            <div class="row space-top-30">
+                <div class="col-md-6 about-text-2   fadeInLeft second">
+                    <h2 class="text-primary">The History</h2>
+                    <div class="separator-line space-bottom text-left">&nbsp;</div>
+                    <h4 class="sub-title">Accessible for all types of events <span class="text-primary">1969</span></h4>
+                    <p>Basking Ridge Country Club Catering is open to the community and accessible for all types of events, be it an intimate private dinner party or a lavish celebration with guests in the hundreds. Overlooking 258 private acres with panoramic views of the manicured fairways and beautiful Somerset Hills, our facility is traditional & elegant, featuring a raised hearth fireplaces, mirrored French doors, crystal chandeliers and customizable lighting. Basking Ridge Country Club Catering’s friendly and professional event coordinators will guide you through every step of your function. It is our passion to provide warm hospitality, excellent service, and superior quality, creating a memorable experience for you and your guests</p>
+                </div><!-- / about-text-2 -->
+                <div class="col-md-6 about-slider   fadeInRight second">
+                    <div id="mini-slider" class="carousel slide" data-ride="carousel">
+                        <!-- wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="{% static './b_ridge/images/custom/1.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static './b_ridge/images/custom/2.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static './b_ridge/images/custom/3.png' %}" alt="">
+                            </div>
+                        </div>
+                        <!-- / wrapper for slides -->
+                        <!-- controls -->
+                        <a class="left carousel-control" href="#mini-slider" role="button" data-slide="prev">
+                            <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#mini-slider" role="button" data-slide="next">
+                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        </a>
+                        <!-- / controls -->
+                    </div><!-- / mini-slider -->
+                </div><!-- / about-slider -->
+            </div><!-- / row -->
+        </div><!-- / container -->
+    </section>
+    <!-- / about -->
+    <section id="about">
+        <div class="container">
+            <div class="row space-top-30">
+    
+                <div class="col-md-6 about-slider   fadeInRight second">
+                    <div id="mini-slider" class="carousel slide" data-ride="carousel">
+                        <!-- wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+        
+                            <div class="item active">
+                                <img src="{% static './b_ridge/images/custom/6.png' %}" alt="">
+                            </div>
+                        </div>
+                        <!-- / wrapper for slides -->
+    
+                        <!-- controls -->
+                        <a class="left carousel-control" href="#mini-slider" role="button" data-slide="prev">
+                            <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#mini-slider" role="button" data-slide="next">
+                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        </a>
+                        <!-- / controls -->
+                    </div><!-- / mini-slider -->
+                </div><!-- / about-slider -->
+                            <div class="col-md-6 about-text-2   fadeInLeft second">
+                    <h2 class="text-primary">$1500 Off Your Summer Wedding</h2>
+                    <div class="separator-line space-bottom text-left">&nbsp;</div>
+                    <h4 class="sub-title">Accessible for all types of events <span class="text-primary">1969</span></h4>
+                    <p>Basking Ridge Country Club Catering is open to the community and accessible for all types of events, be it an intimate private dinner party or a lavish celebration with guests in the hundreds. Overlooking 258 private acres with panoramic views of the manicured fairways and beautiful Somerset Hills, our facility is traditional & elegant, featuring a raised hearth fireplaces, mirrored French doors, crystal chandeliers and customizable lighting. Basking Ridge Country Club Catering’s friendly and professional event coordinators will guide you through every step of your function. It is our passion to provide warm hospitality, excellent service, and superior quality, creating a memorable experience for you and your guests</p>
+                </div><!-- / about-text-2 -->
+            </div><!-- / row -->
+        </div><!-- / container -->
+    </section>
+    <!-- / about -->
+{% endblock %}

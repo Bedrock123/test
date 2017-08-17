@@ -1,0 +1,489 @@
+/* START - NEW custom.2e3f3cf433d1.css - 5.24.17 */
+h1  {
+    font-family:  TimesNewRoman,  "Times New Roman",  Times,  Baskerville,  Georgia,  serif;
+    -webkit-font-smoothing:  antialiased;
+    font-style:  italic;
+    font-weight:  100;
+    padding:  0;
+    color:  #fff;
+}
+p.subline {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+p.miniline {
+	font-size: 0.8em;
+}
+p.arrow {
+    font-size: 1em;
+    border: 1px solid #fff;
+    padding: 10px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    line-height: 1;
+    margin-top: 0;
+    border-radius: 100%;
+    width: 36px;165
+    height: 36px;
+}
+h1, p.subline, p.miniline {
+    line-height: 1;
+    text-align: right;
+    float: none;
+}
+.parallax-container {
+ height: 80vh;
+}
+.parallax:after {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+}
+@media screen and (max-width: 27em) {
+	h1 {
+	    font-size: 3em;
+	}
+	p.subline {
+    font-size: 1em;
+	}
+	h1, p.subline, p.miniline, p.arrow {
+    text-align: center;
+	}
+	p.arrow {
+		float: none;
+	}
+	.parallax-container {
+		height: 65vh;
+	}
+	
+	.parallax img {
+    left: 20%;
+		bottom: 70%;
+   }
+}
+/* END - NEW custom.2e3f3cf433d1.css - 5.24.17 */
+
+/* colors */
+.navy-blue {color:#143057;}
+.navy-blue-dark {color:#0d203a;}
+.warm-gray {color:#516165;}
+.warm-gray2 {color:#7b8d92;}
+
+
+
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+/* Body */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #7b8d92;
+    background: #fff !important;
+    z-index: 999;
+}
+
+.content a {
+	color:#143057;
+}
+
+.btn-large.green {
+	color: #fff !important;
+}
+
+header {
+	font-weight: 800;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#516165;
+	font-weight: 300;
+}
+h1,h2,h3{
+	letter-spacing: -2px;
+}
+/* Helper Classes */
+
+.dark-blue {
+    color: #1a1751 !important;
+}
+.charcoal {
+    color: #484d56 !important;
+}
+.pumpkin {
+    color: #f28023 !important;
+}
+.dark-blue-background {
+    background: #1a1751;
+    transition: background-color 0.3s ease;
+}
+.charcoal-background  {
+    background: #484d56;
+    background-color: #484d56;
+}
+.pumpkin-background  {
+    background: #f28023;
+}
+.lite-grey-background  {
+    background: #eff2f4;
+}
+.white-background {
+  background: white;
+  transition: background-color 0.3s ease;
+  padding-bottom: 0px;
+
+}
+/* Navigation */
+.main-navigation-1 {
+  height:95px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  border-bottom: 1px solid #efefef;
+}
+.main-navigation-1 ul li a {
+  color: #484d56;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color:#516165;
+}
+
+.main-navigation-1 #desktop-nav li a {
+	  line-height: 95px;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      /*height: 64px;*/
+      line-height: 90px;
+  }
+  nav .button-collapse {
+    float: right;
+  }
+}
+
+.breadcrumb {
+  font-size: 11px;
+}
+.breadcrumb:before {
+  font-size: 15px;
+}
+.main-navigation-2 {
+  height: 50px;
+  
+}
+.sub-navigation {
+  height: 38px;
+  background-color: #eff2f4;
+  box-shadow: 0px 0px 0px #fff;
+}
+.sub-navigation ul li,
+.sub-navigation ul li a {
+  line-height: 37px;
+  color: #484d56;
+  font-weight: 400;
+  font-size: 13px;
+}
+.sub-menu-text {
+  margin-left: 20px;
+}
+.sub-navigation ul li a {
+  font-weight: 400;
+}
+.nav-bar-logo {
+  height: 60px !important;
+  margin-top: 15px;
+}
+
+.main-nav-1-icon {
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+.partner-guidelines {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.edible-education {
+  font-size: 28px;
+}
+.search-map-icon {
+  font-size: 22px;
+  color: #484d56;
+  margin-top:3px;
+}
+.padding-top-5 {
+  padding-top: 5px;
+}
+.what-are-edibles {
+  font-size: 22px;
+}
+.the-law {
+  opacity: .8;
+}
+.main-navigation-2-scrolled {
+  padding-top: 0px;
+  height: 46px;
+}
+.nav-search-bar {
+
+}
+.input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
+  color: rgba(255,255,255,0.7);
+}
+
+.main-navigation-2-scrolled ul li {
+   line-height: 45px !important;
+}
+.nav-logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.main-navigation-2 .nav-wrapper ul .nav-logo:hover {
+  border-bottom: 0px solid white;
+  background-color: transparent;
+}
+
+.sub-menu-button {
+  color: white !important;
+  height: 25px;
+  line-height: 25px !important;
+  font-size: 9px !important;
+}
+
+/* Sign In Content */
+.dropdown-content  {
+  overflow: hidden;
+  min-width: 140px;
+  border-top: 2px solid #3a9fd7;
+}
+.scroll-down-button {
+  font-size: 10px;
+  font-weight: 600;
+
+}
+nav a {
+  color: #484d56;
+}
+
+/* First Desktop Breakpoint Navigation */
+@media (max-width: 1200px) {
+  .main-navigation-1 ul li a {
+		/* font-size: 9px;
+     line-height: 46px;*/
+  }
+  .main-nav-1-icon {
+    font-size: 26;
+  }
+  .main-navigation-2 ul li a {
+      font-size: 13px;
+  }
+  .partner-guidelines {
+      font-size:  15px;
+      margin-top:6px;
+      margin-bottom: 6px;
+  }
+  .what-are-edibles {
+      font-size: 17px;
+  }
+  .the-law {
+    font-size: 23px;
+    margin-bottom: 4px;
+    margin-top:3px;
+  }
+  .sub-navigation ul li,
+  .sub-navigation ul li a {
+      font-size: 11px;
+  }
+}
+/*  Materilize CSS Mobile Breakpoint */
+@media (max-width: 700px) {
+	nav a.button-collapse, nav a.button-collapse i {
+    margin-top: 0;
+    height: 70px;
+    margin-right: 0;
+    float: right;
+    font-weight: 400;
+    line-height: 70px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color:#516165;
+	}
+  .main-nav-1-icon {
+    font-size: 23px;
+  }
+  nav ul a {
+    padding: 0 13px;
+  }
+
+}
+/*  Materilize CSS Mobile Breakpoint */
+@media (max-width: 450px) {
+
+
+}
+@media (max-width:600px) {
+  .main-navigation-1 {
+    border-bottom: 1px solid #e5e5e5;
+      height:70px;   
+  }
+  .nav-bar-logo {
+    max-height: 45px;
+    margin-top:10px;
+    margin-left: 0px;
+  }
+}
+ 
+
+
+/* Mobile Navigation */
+.mobile-nav-header {
+  background: #1a1751;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.mobile-nav li{
+  line-height: 70px;
+ 
+}
+.mobile-nav-item-list  li {
+  line-height: 50px;
+}
+.side-nav {
+  width:250px;
+  z-index: 10000; 
+}
+
+.mobile-nav-item-list  li a{
+  color: white !important;
+}
+.mobile-nav li a{
+  color: white;
+}
+
+.dashed-bottom {
+  border-bottom: 1px dashed white;
+}
+
+.mobile-nav-padding {
+  padding: 14px;
+}
+
+.mobile-partner-guidelines {
+  font-size: 5px; 
+}
+.create-account {
+  font-size: 12px;
+}
+.side-nav a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+nav .mobile-search-form {
+  height: 54px;
+}
+
+
+/*---------Footer---------*/
+.bottom-shadow {
+-webkit-box-shadow: 0px 2px 5px 0px rgba(54,59,67,1);
+-moz-box-shadow: 0px 2px 5px 0px rgba(54,59,67,1);
+box-shadow: 0px 2px 5px 0px rgba(54,59,67,1);
+}
+
+
+.footer-effect {
+    position: relative;
+    z-index: 99;
+}
+.footer-container {
+  padding-bottom: 6.5em;
+}
+
+
+  .page-footer {
+    position: inherit;
+    width: 100%;
+    padding-top: 50px !important;
+
+  }
+  .center-footer-logo {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .footer-effect {
+      display: none;
+  }
+  footer.page-footer {
+    margin-top: 0px;
+  }
+  .footer-container {
+    padding-bottom: 2em;
+  }
+
+
+.footer-links {
+  line-height: 210%;
+
+}
+.footer-links li a:hover {
+  color: #fff;
+	transition: all 0.3s ease;
+}
+
+.steal-text {
+    color: #9a9fa5;
+}
+.footer-header {
+  font-size: 12px;
+}
+.blue.darken-2 {
+  background: #143057 !important;
+}
+.footer-copyright {
+  background: #0d203a !important;
+}
+.footer-copyright a {
+	color: #fff;
+}
+
+.footer-logo {
+  max-width:80px !important;
+  width: 100%;
+}
+.copy-right-text {
+  font-size: 12px;
+}
+
+/* Footer */
+.footer-header {
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+

@@ -1,0 +1,119 @@
+.navbar-default {
+    background: white !important;
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: black !important;
+}
+
+#image-header.bar {
+    background: url("../images/custom/main.png") no-repeat center;
+}
+.header-content h2 {
+    color: #4b2b1b !important;
+}
+.second {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.text-primary {
+    font-family: 'Open Sans', sans-serif !important;
+}
+.dark h2 {
+     font-family: 'Open Sans', sans-serif !important;
+}
+    .header-content h2 {
+        color: white !important;
+    }
+    .logo {
+        width: 100%;
+    }
+    #image-header img {
+        max-width: 500px;
+    
+        padding-top: 233px;
+        
+    }
+
+    #image-header {
+        height: 80vh;
+        margin: auto;
+    }
+    .menu-header{
+        background: white !important;
+        color: black !important;
+        font-weight: 100 !important;
+        height: 30vh !important;
+        margin: auto;
+    }
+
+    .sub-menu-title {
+        background: white !important;
+        color: black !important;
+        height: 30vh !important;
+        margin: auto;
+        font-weight: 100 !important;
+    }
+    .vendor-header{
+        background: white !important;
+        color: black !important;
+        height: 30vh !important;
+        margin: auto;
+        font-weight: 100 !important;
+    }
+    .wedding-header{
+        background: white !important;
+        color: black !important;
+        height: 30vh !important;
+        font-weight: 100 !important;
+        margin: auto;
+    }
+
+    .panel-title {
+        font-family: 'Open Sans', sans-serif !important;
+    }
+    .navbar-default.dark-bg .navbar-toggle .icon-bar {
+        background-color: #222 !important;
+    }
+    @media only screen and (max-width: 767px) {
+        .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+            background: white !important;
+            color: black !important;
+            -webkit-box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+            box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+        }
+        .index-header {
+            height: 400px !important;
+        }
+        #image-header img {
+            padding-top: 23px;
+        }
+    }
+    .contact-header{
+        background: white !important;
+        color: black !important;
+        height: 30vh !important;
+        margin: auto;
+    }
+    #gallery {
+        background: white !important;
+    }
+    .gallery-item {
+        padding: 10px;
+    }
+    .open-gallery {
+        -webkit-box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+        box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+    }
+    .gallery-header{
+        background: white !important;
+        color: black !important;
+        height: 30vh !important;
+        font-weight: 100 !important;
+        margin: auto;
+    }
+    .image-header {
+        background: black !important;
+    }

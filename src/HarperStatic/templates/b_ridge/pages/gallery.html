@@ -1,0 +1,48 @@
+{% extends '../base.html' %}
+{% load thumbnail %}
+{% load staticfiles %} 
+{% block title %}Gallery{% endblock %}
+{% block header %}
+
+
+<div id="image-header" class="bar dark parallax-background menu-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="sub-menu-title">Gallery</h1>
+    
+            </div><!-- header-content -->
+        </div><!-- / container -->
+    </div>
+{% endblock %}
+
+{% block frontend_content %}
+
+<section id="gallery" class="full-gallery">
+        <div class="container-fluid no-padding">
+            <div id="grid" class="row lightbox wow fadeIn first">
+            <div class="col-lg-8 col-lg-offset-2 gallery-item">
+                {% for photo in gallery_items %}
+                <div class="col-xs-6 col-md-4 gallery-item">
+                    <figure>
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="{% thumbnail photo.image 250x250 crop %} " alt="">
+                            <a href="{{photo.image.url}}" class="open-gallery">
+                                <div class="overlay">
+                                    <div class="hovereffect-title">
+                                        <i class="fa fa-plus gallery-icon"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                </div><!-- / gallery-item -->
+                {% endfor %}
+                </div>
+                <!-- sizer -->
+                <div class="col-xs-6 col-md-4 shuffle_sizer"></div>
+            </div><!-- / row -->
+        </div><!-- / container-fluid -->
+    </section>
+    <!-- / gallery -->
+    
+{% endblock %}
