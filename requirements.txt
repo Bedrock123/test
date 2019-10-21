@@ -51,7 +51,7 @@ django-versatileimagefield==1.6
 django-webpack-loader==0.4.1
 django-widget-tweaks==1.4.1
 djangocms-admin-style==1.2.6.2
-djangorestframework==3.5.4
+djangorestframework==3.9.1
 djangorestframework-jwt==1.11.0
 docker-py==1.7.2
 dockerpty==0.4.1
