@@ -21,7 +21,7 @@ cryptography==1.7.2
 decorator==4.0.10
 dill==0.2.7.1
 dj-database-url==0.4.1
-Django==1.10.7
+Django==1.11.29
 django-activeurl==0.1.10
 django-allauth==0.28.0
 django-anymail==0.10
